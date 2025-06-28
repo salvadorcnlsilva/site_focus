@@ -114,28 +114,28 @@ body {
 
 /* Hero Section */
 .hero {
-  background-color: #f4f6fc;
+  background-color: #f5f4f4;
   height: 500px;
   display: flex;
   align-items: center;
+  /*border: 2px dashed red;*/
 }
 
 .hero .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
-  height: 100%;
 
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 40px;
+  height: 100%;
+  width: 100%;
 }
 
+/* Text and Image Columns */
 .hero-text {
-  flex: 1;
-  max-width: 600px;
+  flex: 2;
+  background-color: #f5f4f4;
+  padding: 40px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -143,38 +143,30 @@ body {
 
 .hero-text h1 {
   font-size: 2.8rem;
-  color: #000000;
+  color: #000;
   margin-bottom: 20px;
   font-weight: 700;
   line-height: 1.3;
 }
 
 .hero-text h1 span {
-  color: #3a52b4; /* Focus blue */
+  color: #3a52b4;
 }
 
 .hero-text p {
   font-size: 1rem;
-  color: #333333;
+  color: #333;
   margin-top: 20px;
   line-height: 1.6;
 }
 
 .hero-image {
-  flex: 1;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
+  flex: 3;
+  background-image: url('../assets/firstImage_family_happy_smilling.jpg');
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
 
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-
-  /* gradient mask fade */
-  mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.2), rgba(0,0,0,0));
-  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.2), rgba(0,0,0,0));
+  mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.4), rgba(0,0,0,0));
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,1), rgba(0,0,0,0.4), rgba(0,0,0,0));
 }
